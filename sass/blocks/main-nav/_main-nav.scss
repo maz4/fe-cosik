@@ -47,30 +47,32 @@
     z-index: 2;
   }
 
-  &__menu-bar {
-    height: 0.4rem;
-    width: 2.3rem;
-    margin: 0.5rem 0;
-    background-color: $color-prmiary;
+  &__svg {
+    cursor: pointer;
 
-    &--top {
-      width: 2.9rem;
-      background-color: $nav-close-button;
-      transform: rotate(-45deg) translate(-7px, 6px);
+    &--open {
+      fill: $color-prmiary;
+      position: absolute;
+      top: 228px;
+      left: -25px;
     }
 
-    &--middle {
-      opacity: 0;
-    }
-
-    &--bottom {
-      width: 2.9rem;
-      background-color: $nav-close-button;
-      transform: rotate(45deg) translate(-7px, -6px);
+    &--close {
+      fill: $color-white;
+      top: 5px;
+      left: -25px;
+      position: absolute;
     }
   }
 
-  &__logo {
-    margin-bottom: -3.7rem;
+  &__link {
+    display: inline-block;
+    width: 102px;
+    height: 84px;
+    margin-bottom: -38px;
+    background-image: url("../img/logo-sedona-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 }

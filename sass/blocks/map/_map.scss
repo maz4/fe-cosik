@@ -2,11 +2,9 @@
   position: relative;
 
   &__image {
-    height: 35rem;
     width: 100%;
-    background-image: url("../img/bg-map-mobile@1x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0;
   }
 
   &__caption {

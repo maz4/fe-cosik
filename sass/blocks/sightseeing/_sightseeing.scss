@@ -1,10 +1,9 @@
 .sightseeing {
-  text-align: center;
-  background-color: $color-prmiary;
-
   &__inner {
     display: block;
-    padding: 4rem 10%;
+    padding: 4rem 6.25%;
+    text-align: center;
+    background-color: $color-prmiary;
   }
 
   &__header {
