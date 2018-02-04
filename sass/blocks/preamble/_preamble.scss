@@ -2,11 +2,11 @@
   position: relative;
 
   &__inner {
-    padding: 4rem 10% 4.1rem;
+    padding: 4rem 6.25% 2.5rem;
     text-align: center;
 
     &--small {
-      padding: 3.8rem 7% 1.7rem;
+      padding: 3.8rem 6.25% 1.7rem;
     }
   }
 
@@ -31,20 +31,5 @@
     &--high {
       line-height: $line-height-base;
     }
-  }
-
-  &__svg {
-    width: 100%;
-    position: absolute;
-    top: 199px;
-    left: 0;
-    bottom: 0;
-    fill: $color-prmiary;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    border-top: 1px solid $form-divider;
   }
 }

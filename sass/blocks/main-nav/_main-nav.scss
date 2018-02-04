@@ -53,23 +53,23 @@
     &--open {
       fill: $color-prmiary;
       position: absolute;
-      top: 228px;
-      left: -25px;
+      top: 22.8rem;
+      left: -2.5rem;
     }
 
     &--close {
       fill: $color-white;
-      top: 5px;
-      left: -25px;
+      top: 0.5rem;
+      left: -2.5rem;
       position: absolute;
     }
   }
 
   &__link {
     display: inline-block;
-    width: 102px;
-    height: 84px;
-    margin-bottom: -38px;
+    width: 10.2rem;
+    height: 8.4rem;
+    margin-bottom: -3.8rem;
     background-image: url("../img/logo-sedona-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;

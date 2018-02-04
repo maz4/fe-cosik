@@ -1,9 +1,22 @@
 .sightseeing {
   &__inner {
+    position: relative;
     display: block;
-    padding: 4rem 6.25%;
+    padding: 3.9rem 6.25% 4rem;
     text-align: center;
     background-color: $color-prmiary;
+
+    &--top {
+      padding: 5.7rem 6.25% 4.2rem;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    fill: $color-white;
   }
 
   &__header {
