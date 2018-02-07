@@ -13,8 +13,8 @@
   &__header {
     margin-top: 0;
     margin-bottom: 2.8rem;
-    font-weight: $font-bolded;
-    line-height: $header-line-height;
+    font-weight: $font-weight-bolded;
+    line-height: $line-height-three;
     text-transform: uppercase;
 
     &--small {
@@ -25,11 +25,11 @@
   &__paragraph {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: $header-line-height;
+    line-height: $line-height-three;
     text-transform: uppercase;
 
     &--high {
-      line-height: $line-height-base;
+      line-height: $line-height-one;
     }
   }
 
@@ -38,12 +38,12 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    fill: $color-prmiary;
+    fill: $color-blue;
   }
 
   &::after {
     content: "";
     display: block;
-    border-top: 1px solid $form-divider;
+    border-top: 1px solid $color-gray;
   }
 }

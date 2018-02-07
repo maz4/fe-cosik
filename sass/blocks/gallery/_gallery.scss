@@ -3,7 +3,7 @@
     &::after {
       content: "";
       display: block;
-      border-top: 1px solid $form-divider;
+      border-top: 1px solid $color-gray;
     }
   }
 
@@ -18,16 +18,16 @@
   &__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: $font-size;
-    line-height: $line-height-base;
+    font-size: $font-size-four;
+    line-height: $line-height-one;
     text-transform: uppercase;
   }
 
   &__author {
     margin-top: 0;
     margin-bottom: 0.8rem;
-    font-size: $font-size;
-    line-height: $line-height-base;
+    font-size: $font-size-four;
+    line-height: $line-height-one;
   }
 
   &__likes {

@@ -1,6 +1,6 @@
 .sightseeing {
   text-align: center;
-  background-color: $color-prmiary;
+  background-color: $color-blue;
 
   &__inner {
     display: block;
@@ -11,7 +11,7 @@
     margin-top: 0;
     margin-bottom: 0.9rem;
     color: $color-white;
-    line-height: $header-line-height;
+    line-height: $line-height-three;
     text-transform: uppercase;
   }
 
@@ -19,7 +19,7 @@
     margin-top: 0;
     margin-bottom: 1.5rem;
     color: $color-white;
-    line-height: $paragraph-two-line-height;
+    line-height: $line-height-two;
     text-transform: uppercase;
   }
 
@@ -27,7 +27,7 @@
     margin-top: 0;
     margin-bottom: 0;
     color: $color-white;
-    line-height: $paragraph-two-line-height;
+    line-height: $line-height-two;
     text-transform: uppercase;
   }
 }
