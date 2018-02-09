@@ -5,16 +5,16 @@
 
   &__header {
     margin-bottom: 2.6rem;
-    font-size: $font-size--h3;
-    line-height: $header-line-height;
+    font-size: $font-size-three;
+    line-height: $line-height-three;
     text-align: center;
     text-transform: uppercase;
   }
 
   &__paragraph {
     margin-top: 0;
-    font-size: $font-size;
-    line-height: $line-height-base;
+    font-size: $font-size-four;
+    line-height: $line-height-one;
     text-align: center;
     text-transform: uppercase;
   }
@@ -40,7 +40,7 @@
   &__bar {
     position: relative;
     height: 44px;
-    background-color: rgba($bottom-border-color, 0.5);
+    background-color: $color-black-brighten-two;
 
     &::before {
       content: "";
@@ -51,7 +51,7 @@
       margin-right: 2.2rem;
       width: auto;
       height: 0.3rem;
-      background-color: $top-border;
+      background-color: $color-white-dimm-two;
     }
   }
 
@@ -70,7 +70,7 @@
   &__btn-control {
     position: relative;
     height: 6.6rem;
-    background-color: $color-input;
+    background-color: $color-gray-light;
   }
 
   &__icon {
@@ -81,14 +81,13 @@
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: $color-input;
+    background-color: $color-gray-light;
 
     &:hover {
-      background-color: $color-input;
+      background-color: $color-gray-light;
     }
 
     &--play {
-
       top: 23px;
       left: 26px;
       height: 2rem;
@@ -113,10 +112,10 @@
   }
 
   &__svg {
-    fill: $dark-gray;
+    fill: $color-gray-darker-two;
 
     &:hover {
-      fill: $color-radio-mark;
+      fill: $color-black-light;
     }
 
     &:active {
