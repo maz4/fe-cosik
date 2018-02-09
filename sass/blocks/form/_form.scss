@@ -15,7 +15,9 @@
 
   &__inner {
     position: relative;
-    padding: 1.8rem 6.25% 0.9rem;
+    padding-top: 1.8rem;
+    padding-bottom: 0.9rem;
+    @include inner_padding;
 
     &--smaller {
       padding-bottom: 0.4rem;
@@ -399,25 +401,7 @@
   }
 
   &__submit {
-    display: inline-block;
-    height: 5.8rem;
-    width: 100%;
-    font-size: $font-size-two;
-    line-height: 5.8rem;
-    color: $color-white;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: $color-blue;
-    border: none;
-
-    &:hover {
-      background-color: $color-blue-dark;
-    }
-
-    &:active {
-      color: $color-white-dimm;
-      background-color: $color-blue-darker;
-    }
+    @include btn_big;
   }
 
   &__display-photos {

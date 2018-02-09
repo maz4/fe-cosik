@@ -1,7 +1,9 @@
 .video {
   &__intro {
-    padding: 1.5rem 6.25% 1rem;
-    border-top: 1px solid #e5e5e5;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    @include inner_padding;
+    border-top: 1px solid $color-gray;
   }
 
   &__header {

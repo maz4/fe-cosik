@@ -2,12 +2,15 @@
   &__inner {
     position: relative;
     display: block;
-    padding: 3.9rem 6.25% 4rem;
+    padding-top: 3.9rem;
+    padding-bottom: 4rem;
+    @include inner_padding;
     text-align: center;
     background-color: $color-blue;
 
     &--top {
-      padding: 5.7rem 6.25% 4.2rem;
+      padding-top: 5.7rem;
+      padding-bottom: 4.2rem;
     }
   }
 

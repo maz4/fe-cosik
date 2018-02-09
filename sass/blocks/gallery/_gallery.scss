@@ -1,7 +1,9 @@
 .gallery {
   &__inner {
-    padding: 2.2rem 6.25% 1.7rem;
-    border-top: 1px solid #e5e5e5;
+    padding-top: 2.2rem;
+    padding-bottom: 1.7rem;
+    @include inner_padding;
+    border-top: 1px solid $color-gray;
   }
 
   &__caption {
