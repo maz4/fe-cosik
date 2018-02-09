@@ -23,6 +23,7 @@
     position: relative;
     padding-top: 1rem;
     padding-bottom: 9.8rem;
+    overflow: hidden;
   }
 
   &__picture {
@@ -88,7 +89,6 @@
     }
 
     &--play {
-
       top: 23px;
       left: 26px;
       height: 2rem;
