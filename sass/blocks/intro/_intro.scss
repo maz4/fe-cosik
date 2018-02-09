@@ -31,13 +31,11 @@
   &--smaller {
     height: 16rem;
     background: url("../img/text-sedona.svg"),
+      url("../img/bg-intro-triangle-mobile.svg"),
       url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat,
-      no-repeat;
-    background-size: 23.1rem,
-      auto;
-    background-position: 49% 43%,
-      50% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 23.1rem, 100% 100%, auto;
+    background-position: 49% 43%, 0 67px, 50% 100%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background: url("../img/text-sedona.svg"),

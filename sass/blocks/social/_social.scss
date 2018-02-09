@@ -21,16 +21,16 @@
     width: 17px;
     margin-right: 0.4rem;
     padding: 1.5rem;
-    background-color: $color-prmiary;
+    background-color: $color-blue;
     fill: white;
 
     &:hover {
-      background-color: $color-hover-btn;
+      background-color: $color-blue-dark;
     }
 
     &:active {
-      fill: $font-active-btn;
-      background-color: $color-active-btn;
+      fill: $color-white-dimm;
+      background-color: $color-blue-darker;
     }
   }
 }
