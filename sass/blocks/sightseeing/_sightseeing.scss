@@ -4,6 +4,7 @@
     display: block;
     padding-top: 3.9rem;
     padding-bottom: 4rem;
+
     @include inner_padding;
     text-align: center;
     background-color: $color-blue;

@@ -10,7 +10,6 @@
   }
 
   &__header {
-
     @include header_one($font-size-three);
     margin-bottom: 1.9rem;
   }
@@ -24,7 +23,6 @@
   }
 
   &__btn {
-    
     @include btn_big;
   }
 }

@@ -4,6 +4,7 @@
   &__inner {
     padding-top: 2rem;
     padding-bottom: 2.4rem;
+
     @include inner_padding;
   }
 
