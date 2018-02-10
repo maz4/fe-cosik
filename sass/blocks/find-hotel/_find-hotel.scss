@@ -5,14 +5,14 @@
     position: relative;
     padding-top: 2.8rem;
     padding-bottom: 4.9rem;
+
     @include inner_padding;
   }
 
   &__header {
-    margin-top: 0;
+
+    @include header_one($font-size-three);
     margin-bottom: 1.9rem;
-    line-height: $line-height-three;
-    text-transform: uppercase;
   }
 
   &__paragraph {
@@ -24,6 +24,7 @@
   }
 
   &__btn {
+    
     @include btn_big;
   }
 }

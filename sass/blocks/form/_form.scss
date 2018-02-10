@@ -239,10 +239,9 @@
   }
 
   &__header {
-    margin-top: 0;
+    @include header_one;
     margin-bottom: 2rem;
     text-align: center;
-    text-transform: uppercase;
 
     &--space-bottom {
       margin-bottom: 2.2rem;

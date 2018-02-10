@@ -14,11 +14,8 @@
   }
 
   &__header {
-    margin-top: 0;
+    @include header_one;
     margin-bottom: 2.8rem;
-    font-weight: $font-weight-bolded;
-    line-height: $line-height-three;
-    text-transform: uppercase;
 
     &--small {
       margin-bottom: 2.5rem;

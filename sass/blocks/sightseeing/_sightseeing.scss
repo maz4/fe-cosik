@@ -23,11 +23,9 @@
   }
 
   &__header {
-    margin-top: 0;
+    @include header_one;
     margin-bottom: 0.9rem;
     color: $color-white;
-    line-height: $line-height-three;
-    text-transform: uppercase;
   }
 
   &__counter-paragraph {

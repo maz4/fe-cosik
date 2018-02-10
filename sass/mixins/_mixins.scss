@@ -2,7 +2,6 @@
   padding-left: $padding-LR;
   padding-right: $padding-LR;
 }
-
 @mixin btn_big {
   display: inline-block;
   height: 5.8rem;
@@ -27,4 +26,11 @@
   &:disabled {
     background-color: $color-gray;
   }
+}
+@mixin header_one ($size) {
+  margin-top: 0;
+  font-size: $size;
+  font-weight: $font-weight-bolded;
+  line-height: $line-height-three;
+  text-transform: uppercase;
 }
