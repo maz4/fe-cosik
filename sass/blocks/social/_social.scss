@@ -8,7 +8,7 @@
     display: inline-block;
     padding: 2.1rem 2.3rem 2.5rem;
     margin-right: 0.4rem;
-    background-color: $color-prmiary;
+    background-color: $color-blue;
 
     &--twitter {
       background-image: url("../images/tweeter-icon.png");
@@ -16,11 +16,11 @@
       background-repeat: no-repeat;
 
       &:hover {
-        background-color: $color-hover-btn;
+        background-color: $color-blue-dark;
       }
 
       &:active {
-        background-color: $color-active-btn;
+        background-color: $color-blue-darker;
         background-image: url("../images/tweeter-down.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -33,11 +33,11 @@
       background-repeat: no-repeat;
 
       &:hover {
-        background-color: $color-hover-btn;
+        background-color: $color-blue-dark;
       }
 
       &:active {
-        background-color: $color-active-btn;
+        background-color: $color-blue-darker;
         background-image: url("../images/facebook-down.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -50,11 +50,11 @@
       background-repeat: no-repeat;
 
       &:hover {
-        background-color: $color-hover-btn;
+        background-color: $color-blue-dark;
       }
 
       &:active {
-        background-color: $color-active-btn;
+        background-color: $color-blue-darker;
         background-image: url("../images/youtube-down.png");
         background-position: center;
         background-repeat: no-repeat;
