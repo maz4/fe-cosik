@@ -9,6 +9,7 @@
 
   &__inner {
     padding: 2.2rem 6.25% 1.7rem;
+    border-top: 1px solid #e5e5e5;
   }
 
   &__caption {
@@ -71,5 +72,9 @@
     margin-bottom: 1.5rem;
     text-align: center;
     line-height: 0;
+
+    & img {
+      width: 100%;
+    }
   }
 }

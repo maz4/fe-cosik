@@ -1,8 +1,4 @@
 .developer {
-  position: relative;
-  padding-top: 1px;
-  padding-bottom: 5px;
-
   &__paragraph {
     display: inline-block;
     margin-top: 0;
@@ -13,25 +9,20 @@
 
   &__logo {
     position: relative;
-    top: 1.4rem;
+    top: 1.3rem;
     left: 0.2rem;
     display: inline-block;
     height: 3.6rem;
     width: 2.8rem;
-    background-image: url("../images/logo-footer.png");
-    background-position: center;
-    background-repeat: no-repeat;
+  }
 
+  &__svg {
     &:hover {
-      background-image: url("../images/logo-footer-hvr.png");
-      background-position: center;
-      background-repeat: no-repeat;
+      fill: $color-blue;
     }
 
     &:active {
-      background-image: url("../images/logo-footer-down.png");
-      background-position: center;
-      background-repeat: no-repeat;
+      opacity: 0.3;
     }
   }
 }

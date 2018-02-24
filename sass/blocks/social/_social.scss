@@ -1,66 +1,10 @@
 .social {
   position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding-top: 1.7rem;
-  padding-bottom: 1.8rem;
-
-  &__icon {
-    display: inline-block;
-    padding: 2.1rem 2.3rem 2.5rem;
-    margin-right: 0.4rem;
-    background-color: $color-blue;
-
-    &--twitter {
-      background-image: url("../images/tweeter-icon.png");
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &:hover {
-        background-color: $color-blue-dark;
-      }
-
-      &:active {
-        background-color: $color-blue-darker;
-        background-image: url("../images/tweeter-down.png");
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-
-    &--facebook {
-      background-image: url("../images/facebook-icon.png");
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &:hover {
-        background-color: $color-blue-dark;
-      }
-
-      &:active {
-        background-color: $color-blue-darker;
-        background-image: url("../images/facebook-down.png");
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-
-    &--youtube {
-      background-image: url("../images/youtube-icon.png");
-      background-position: center;
-      background-repeat: no-repeat;
-
-      &:hover {
-        background-color: $color-blue-dark;
-      }
-
-      &:active {
-        background-color: $color-blue-darker;
-        background-image: url("../images/youtube-down.png");
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-  }
+  padding-bottom: 2.6rem;
 
   &__text {
     position: absolute;
@@ -71,5 +15,50 @@
     border: 0;
     overflow: hidden;
     clip: rect(0 0 0 0);
+  }
+
+  &__link {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    margin-right: 0.5rem;
+    background-color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+
+    &:active {
+      background-color: $color-blue-darker;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    height: 48px;
+    width: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 19px;
+
+    @include text_hide();
+
+    &--twitter {
+      background-image: url("../img/icon-twitter.svg");
+    }
+
+    &--facebook {
+      background-image: url("../img/icon-facebook.svg");
+      background-size: 9px;
+    }
+
+    &--youtube {
+      background-image: url("../img/icon-youtube.svg");
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
