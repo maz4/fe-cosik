@@ -240,7 +240,7 @@
   }
 
   &__header {
-    @include header_one;
+    @include header(h3);
     margin-bottom: 2rem;
     text-align: center;
 

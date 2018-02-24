@@ -1,38 +1,6 @@
-@mixin inner_padding {
-  padding-left: $padding-LR;
-  padding-right: $padding-LR;
-}
-
-@mixin btn_big {
-  display: inline-block;
-  height: 5.8rem;
-  width: 100%;
-  color: $color-white;
-  font-size: $font-size-two;
-  line-height: 5.8rem;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: $color-blue;
-  border: none;
-
-  &:hover {
-    background-color: $color-blue-dark;
-  }
-
-  &:active {
-    color: $color-white-dimm;
-    background-color: $color-blue-darker;
-  }
-
-  &:disabled {
-    background-color: $color-gray;
-  }
-}
-
-@mixin header_one ($size) {
-  margin-top: 0;
-  font-size: $size;
-  font-weight: $font-weight-bolded;
-  line-height: $line-height-three;
-  text-transform: uppercase;
-}
+@import "mixins/header";
+@import "mixins/btn_big";
+@import "mixins/inner_padding";
+@import "mixins/text-hide";
+@import "mixins/size";
+@import "mixins/image";
