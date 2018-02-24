@@ -10,17 +10,23 @@
     background-color: $color-blue;
 
     &--top {
-      padding-top: 5.7rem;
-      padding-bottom: 4.2rem;
+      padding: 5.7rem 6.25% 4.2rem;
     }
-  }
 
-  &__svg {
-    position: absolute;
-    top: -2rem;
-    left: 0;
-    width: 100%;
-    fill: $color-white;
+    &--separator {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -19px;
+        left: 0;
+
+        @include size(100%, 3.7rem);
+        background-image: url("../img/bg-triangle.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 3.7rem;
+      }
+    }
   }
 
   &__header {
