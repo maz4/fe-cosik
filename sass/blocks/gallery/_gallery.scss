@@ -1,14 +1,9 @@
 .gallery {
-  &__item {
-    &::after {
-      content: "";
-      display: block;
-      border-top: 1px solid $color-gray;
-    }
-  }
-
   &__inner {
-    padding: 2.2rem 6.25% 1.7rem;
+    @include inner_padding($padding-LR);
+    padding-top: 2.2rem;
+    padding-bottom: 1.7rem;
+    border-top: 1px solid $color-gray;
   }
 
   &__caption {
@@ -16,18 +11,14 @@
   }
 
   &__title {
-    margin-top: 0;
+    @include header(h4);
     margin-bottom: 0;
-    font-size: $font-size-four;
-    line-height: $line-height-one;
     text-transform: uppercase;
   }
 
   &__author {
-    margin-top: 0;
+    @include paragraph($line-height-one);
     margin-bottom: 0.8rem;
-    font-size: $font-size-four;
-    line-height: $line-height-one;
   }
 
   &__likes {
@@ -71,5 +62,9 @@
     margin-bottom: 1.5rem;
     text-align: center;
     line-height: 0;
+
+    & img {
+      width: 100%;
+    }
   }
 }

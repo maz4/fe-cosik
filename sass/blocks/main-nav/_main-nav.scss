@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  margin-bottom: -3.9rem;
 
   &__list {
     margin: 0;
@@ -42,35 +43,35 @@
 
   &__toggle {
     position: absolute;
-    top: 1.2rem;
-    right: 1.7rem;
+    top: 17px;
+    right: 21px;
     z-index: 2;
+    display: block;
+    height: 22px;
+    width: 22px;
+    border: none;
+    outline: none;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include text-hide();
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &--close {
+      background-image: url("../img/icon-cross--white.svg");
+    }
   }
 
-  &__menu-bar {
-    height: 0.4rem;
-    width: 2.3rem;
-    margin: 0.5rem 0;
-    background-color: $color-blue;
-
-    &--top {
-      width: 2.9rem;
-      background-color: $color-white;
-      transform: rotate(-45deg) translate(-7px, 6px);
-    }
-
-    &--middle {
-      opacity: 0;
-    }
-
-    &--bottom {
-      width: 2.9rem;
-      background-color: $color-white;
-      transform: rotate(45deg) translate(-7px, -6px);
-    }
-  }
-
-  &__logo {
-    margin-bottom: -3.7rem;
+  &__link {
+    display: inline-block;
+    text-decoration: none;
   }
 }
