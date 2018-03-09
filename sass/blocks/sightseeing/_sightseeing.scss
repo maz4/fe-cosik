@@ -46,4 +46,44 @@
     margin-bottom: 0;
     color: $color-white;
   }
+
+  // Tablet screen
+  @include screen-size($tablet-size) {
+    display: flex;
+
+    &__inner {
+      width: 24rem;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+
+      &--separator {
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    &__header {
+      @include text-size($font-size-two, $line-height-three);
+    }
+
+    &__counter-paragraph {
+      margin-bottom: 2.2rem;
+    }
+  }
+  // Desktop screen
+  @include screen-size($desktop-size) {
+    &__inner {
+      width: 37.6rem;
+      padding-top: 5.2rem;
+    }
+
+    &__header {
+      margin-bottom: 1rem;
+    }
+
+    &__counter-paragraph {
+      margin-bottom: 2.1rem;
+    }
+  }
 }

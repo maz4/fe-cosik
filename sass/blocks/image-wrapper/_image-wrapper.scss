@@ -1,8 +1,38 @@
 .image-wrapper {
-  text-align: center;
-  line-height: 0;
+  height: 26rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  & img {
+  @include text-hide();
+
+  &--top {
+    @include img-retina("../img/main-city-tablet@1x.jpg", "../img/main-city-tablet@2x.jpg");
+  }
+
+  &--bottom {
+    @include img-retina("../img/main-bridge-tablet@1x.jpg", "../img/main-bridge-tablet@2x.jpg");
+  }
+
+  // Tablet-screen
+  @include screen-size($tablet-size) {
+    height: 25.6rem;
+    max-height: 100%;
     width: 100%;
+
+    &--bottom {
+      order: -1;
+    }
+  }
+
+  // Desktop screen
+  @include screen-size($desktop-size) {
+    &--top {
+      @include img-retina("../img/main-city-desktop@1x.jpg", "../img/main-city-desktop@2x.jpg");
+    }
+
+    &--bottom {
+      @include img-retina("../img/main-bridge-desktop@1x.jpg", "../img/main-bridge-desktop@2x.jpg");
+    }
   }
 }
