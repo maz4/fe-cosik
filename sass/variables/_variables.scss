@@ -17,6 +17,10 @@ $line-height-three:     2.6rem;
 
 //padding
 $padding-LR: 6.25%;
+$padding-tablet-one-LR: 18.5%;
+$padding-tablet-two-LR: 4%;
+$padding-desktop-one-LR: 29.75%;
+$padding-desktop-two-LR: 6%;
 
 // Colours
 //----------
@@ -45,4 +49,10 @@ $color-black-darker:    #231f20;
 $color-black-brighten:  rgba($color-black, 0.2);
 $color-black-brighten-two: rgba($color-black, 0.5);
 
-$uppercase: true;
+$color-brown-light:     #766357;
+$color-brown:           #604e43;
+$uppercase:             true;
+
+// Media queries break points:
+$tablet-size:           768px;
+$desktop-size:          1200px;
