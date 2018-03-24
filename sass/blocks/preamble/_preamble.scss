@@ -37,11 +37,20 @@
       padding-bottom: 5rem;
 
       @include inner_padding($padding-tablet-one-LR);
+
+      &--small {
+        padding-top: 7.5rem;
+      }
     }
 
     &__header {
       @include text-size($font-size-two, $line-height-three);
       margin-bottom: 2.8rem;
+
+      &--small {
+        @include header(h1);
+        margin-bottom: 3rem;
+      }
     }
   }
 
@@ -49,6 +58,10 @@
   @include screen-size($desktop-size) {
     &__inner {
       @include inner_padding($padding-desktop-one-LR);
+
+      &--small {
+        padding-top: 11.1rem;
+      }
     }
   }
 }
