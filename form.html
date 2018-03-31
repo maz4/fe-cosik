@@ -51,8 +51,8 @@
       <form class="form" action="" method="get">
 
         <section class="form__section">
-          <div class="form__inner form__inner--smaller">
-            <h3 class="form__header form__header--space-bottom">Introduce yourself:</h3>
+          <div class="form__inner form__inner--smaller form__inner--right">
+            <h3 class="form__header form__header--space-bottom form__header--left">Introduce yourself:</h3>
             <div class="form__field form__field--flexgrid">
               <label class="form__label form__label--stretch" for="name">Name:</label>
               <input class="form__input" id="name" name="name" type="text">
@@ -71,14 +71,19 @@
         <section class="form__section">
           <div class="form__inner">
             <h3 class="form__header">Contact Information:</h3>
-            <div class="form__field form__field--phone">
-              <label class="form__label" for="phone">Contact number:</label>
-              <input class="form__input form__input--phone" id="phone" name="phone" type="tel">
-              <span class="form__error">Error, double-check the number</span>
-            </div>
-            <div class="form__field form__field--envelope">
-              <label class="form__label" for="email">Email:</label>
-              <input class="form__input form__input--envelope" id="email" name="email" type="email" required>
+            <div class="form__item-row">
+              <div class="form__field form__field--phone">
+                <label class="form__label form__label--phone" for="phone">
+                  <span class="form__text-mobile">Contact number:</span>
+                  <span class="form__text-desktop">Phone:</span>
+                </label>
+                <input class="form__input form__input--phone" id="phone" name="phone" type="tel">
+                <span class="form__error">Error, double-check the number</span>
+              </div>
+              <div class="form__field form__field--envelope">
+                <label class="form__label form__label--envelope" for="email">Email:</label>
+                <input class="form__input form__input--envelope" id="email" name="email" type="email" required>
+              </div>
             </div>
           </div>
         </section>
@@ -86,22 +91,23 @@
         <section class="form__section">
           <div class="form__inner">
             <h3 class="form__header">Travel Dates:</h3>
-            <div class="form__field">
-              <label class="form__label" for="checkin">Checkin:<span class="form__required form__required--aligne">*</span></label>
-              <input class="form__input" id="checkin" name="checkin" type="date">
-            </div>
-            <div class="form__field form__field--constant">
-              <label class="form__label" for="stay">Length of stay:<span class="form__required form__required--aligne">*</span></label>
-              <div class="form__number form__number--flexgrid">
-                <button class="form__btn form__btn--dec" type="button"></button>
-                <input class="form__input form__input--small" id="stay" min="1" step="1" max="31" type="number" value="1" required readonly="readonly">
-                <div class="form__type-parallel">day</div>
-                <button class="form__btn form__btn--inc" type="button"></button>
+            <div class="form__wrapper">
+              <div class="form__field form__field--small">
+                <label class="form__label" for="checkin">Checkin:<span class="form__required form__required--aligne">*</span></label>
+                <input class="form__input" id="checkin" name="checkin" type="date">
               </div>
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="checkout">Checkout:<span class="form__required form__required--aligne">*</span></label>
-              <input class="form__input" id="checkout" name="checkout" type="date" required>
+              <div class="form__field form__field--constant">
+                <label class="form__label form__label--swap" for="stay">Length of stay:<span class="form__required form__required--aligne">*</span></label>
+                <div class="form__number form__number--flexgrid">
+                  <button class="form__btn form__btn--dec" type="button"></button>
+                  <div class="form__number-holder form__number-holder--day" id="stay">1</div>
+                  <button class="form__btn form__btn--inc" type="button"></button>
+                </div>
+              </div>
+              <div class="form__field  form__field--small">
+                <label class="form__label" for="checkout">Checkout:<span class="form__required form__required--aligne">*</span></label>
+                <input class="form__input" id="checkout" name="checkout" type="date" required>
+              </div>
             </div>
           </div>
         </section>
@@ -109,12 +115,11 @@
         <section class="form__section">
           <div class="form__inner">
             <h3 class="form__header">Number of travellers</h3>
-            <div class="form__field form__field--constant">
+            <div class="form__field form__field--constant form__field--aligne-left">
               <label class="form__label" for="travellers">Number of travellers:<span class="form__required form__required--aligne">*</span></label>
               <div class="form__number form__number--flexgrid">
                 <button class="form__btn form__btn--dec" type="button"></button>
-                <input class="form__input form__input--small" id="travellers" min="1" step="1" max="10" value="1" placeholder="person" type="number" required readonly="readonly">
-                <div class="form__type-parallel">person</div>
+                <div class="form__number-holder form__number-holder--person" id="travellers">1</div>
                 <button class="form__btn form__btn--inc" type="button"></button>
               </div>
             </div>
@@ -145,8 +150,8 @@
         </section>
 
         <section class="form__section">
-          <div class="form__inner">
-            <h3 class="form__header">Your General impression:</h3>
+          <div class="form__inner form__inner--left">
+            <h3 class="form__header form__header--left">Your General impression:</h3>
             <div class="form__field form__field--radio-box">
               <input class="form__input form__input--radio form__input--hidden" id="answer-positive" name="answer" type="radio" value="rather-positive" checked/>
               <label class="form__label form__label--radio-box form__label--bolded" for="answer-positive">Rather positive</label>
@@ -165,30 +170,35 @@
         <section class="form__section">
           <div class="form__inner">
             <h3 class="form__header">Sights visited:</h3>
-            <div class="form__field form__field--checkbox">
-              <input class="form__input form__input--checkbox form__input--hidden" id="bridge" name="bridge" type="checkbox" value="devils-bridge">
-              <label class="form__label form__label--checkbox form__label--bolded" for="bridge">The Devil's Bridge</label>
-            </div>
-            <div class="form__field form__field--checkbox">
-              <input class="form__input form__input--checkbox form__input--hidden" id="park" name="park" type="checkbox" value="slide-park">
-              <label class="form__label form__label--checkbox form__label--bolded" for="park">Slide-park</label>
-            </div>
-            <div class="form__field form__field--checkbox">
-              <input class="form__input form__input--checkbox form__input--hidden" id="mountain" name="mountain" type="checkbox" value="mountain-bell">
-              <label class="form__label form__label--checkbox form__label--bolded" for="mountain">Mountain-bell</label>
-            </div>
-            <div class="form__field form__field--checkbox">
-              <input class="form__input form__input--checkbox form__input--hidden" id="cliffs" name="cliffs" type="checkbox" value="red-cliffs">
-              <label class="form__label form__label--checkbox form__label--bolded" for="cliffs">Red cliffs</label>
+            <div class="form__item">
+              <div class="form__field form__field--checkbox">
+                <input class="form__input form__input--checkbox form__input--hidden" id="bridge" name="bridge" type="checkbox" value="devils-bridge">
+                <label class="form__label form__label--checkbox form__label--bolded" for="bridge">The Devil's Bridge</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__input form__input--checkbox form__input--hidden" id="park" name="park" type="checkbox" value="slide-park">
+                <label class="form__label form__label--checkbox form__label--bolded" for="park">Slide-park</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__input form__input--checkbox form__input--hidden" id="mountain" name="mountain" type="checkbox" value="mountain-bell">
+                <label class="form__label form__label--checkbox form__label--bolded" for="mountain">Mountain-bell</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__input form__input--checkbox form__input--hidden" id="cliffs" name="cliffs" type="checkbox" value="red-cliffs">
+                <label class="form__label form__label--checkbox form__label--bolded" for="cliffs">Red cliffs</label>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="form__section">
           <div class="form__inner">
-            <h3 class="form__header">Upload photos</h3>
-            <div class="form__field">
-              <label class="form__label form__label--file" for="file">Choose photos</label>
+            <h3 class="form__header form__header--bottom-space">Upload photos</h3>
+            <div class="form__field form__field--bottom-space">
+              <label class="form__label form__label--file" for="file">
+                <span class="form__text-mobile">Choose photos</span>
+                <span class="form__text-desktop">Drag and drop your photo here</span>
+              </label>
               <input class="form__input form__input--hidden" id="file" name="file" accept=".jpg, .jpeg, .png" type="file" multiple>
             </div>
             <div class="form__display-photos">
@@ -226,7 +236,7 @@
 
         <section class="form__section form__section--no-divider">
           <div class="form__inner form__inner--lower">
-            <h3 class="form__header">Describe your emotions:</h3>
+            <h3 class="form__header form__header--bottom-space">Describe your emotions:</h3>
             <div class="form__field">
               <textarea class="form__input form__input--textarea" id="feedback" name="feedback"></textarea>
             </div>
@@ -234,7 +244,8 @@
         </section>
         <section class="form__section form__section--no-divider">
           <div class="form__inner form__inner--high">
-            <button class="form__submit" type="submit">POST REVIEW</button>
+            <button class="form__submit" type="submit">Send Review</button>
+            <span class="form__required form__required--text"><span class="form__required">*</span> - required fields</span>
           </div>
         </section>
       </form>
