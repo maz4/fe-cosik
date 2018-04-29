@@ -9,8 +9,12 @@ function initMap() {
     zoom: 7,
     center: position
   });
+  var iconPicture = '../img/icon-map-marker.svg'
   var marker = new google.maps.Marker({
     position: position,
-    map: map
+    map: map,
+    icon: iconPicture,
+    title: 'Sedona'
   });
 }
+google.maps.event.addDomListener(window, 'load', initMap);
