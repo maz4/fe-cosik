@@ -12,7 +12,7 @@
 
   <script>
     // Picture element HTML5 shiv
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
   <script src="node_modules\picturefill\dist\picturefill.min.js" async></script>
 </head>
@@ -90,25 +90,25 @@
 
       <section class="sections-group">
         <section class="sightseeing-group">
-        <div class="sightseeing-group__inner">
-          <div class="sightseeing-group__item">
-            <h3 class="sightseeing-group__header">Small Area</h3>
-            <p class="sightseeing-group__counter-paragraph">— №3 —</p>
-            <p class="sightseeing-group__paragraph">All the attractions are very close</p>
-          </div>
+          <div class="sightseeing-group__inner">
+            <div class="sightseeing-group__item">
+              <h3 class="sightseeing-group__header">Small Area</h3>
+              <p class="sightseeing-group__counter-paragraph">— №3 —</p>
+              <p class="sightseeing-group__paragraph">All the attractions are very close</p>
+            </div>
 
-          <div class="sightseeing-group__item">
-            <h3 class="sightseeing-group__header">Beautiful Road</h3>
-            <p class="sightseeing-group__counter-paragraph">— №4 —</p>
-            <p class="sightseeing-group__paragraph">Go to Sedona Las Vegas it's anything but not boring!</p>
-          </div>
+            <div class="sightseeing-group__item">
+              <h3 class="sightseeing-group__header">Beautiful Road</h3>
+              <p class="sightseeing-group__counter-paragraph">— №4 —</p>
+              <p class="sightseeing-group__paragraph">Go to Sedona Las Vegas it's anything but not boring!</p>
+            </div>
 
-          <div class="sightseeing-group__item">
-            <h3 class="sightseeing-group__header">Small Tourism</h3>
-            <p class="sightseeing-group__counter-paragraph">— №5 —</p>
-            <p class="sightseeing-group__paragraph">Most go to the Grand Canyon and it's crowded there</p>
+            <div class="sightseeing-group__item">
+              <h3 class="sightseeing-group__header">Small Tourism</h3>
+              <p class="sightseeing-group__counter-paragraph">— №5 —</p>
+              <p class="sightseeing-group__paragraph">Most go to the Grand Canyon and it's crowded there</p>
+            </div>
           </div>
-        </div>
         </section>
       </section>
 
@@ -121,14 +121,7 @@
       </section>
 
       <section class="map">
-        <div class="map__image">
-          <picture>
-            <source media="(min-width: 769px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 480px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <source srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x">
-            <img src="img/bg-map-mobile@1x.jpg" alt="Sedona on the map">
-          </picture>
-        </div>
+        <div class="map__image js-google-map"></div>
       </section>
     </main>
 
@@ -161,7 +154,9 @@
     </footer>
   </div>
   <!-- main page ends-->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="js/mobile-menu.js"></script>
+  <script src="js/google-map.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/date-counter.js"></script>
   <script src="js/people-counter.js"></script>

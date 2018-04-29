@@ -3,15 +3,21 @@
 
   // Init menu
   var mobileMenuElem = document.querySelector('.main-nav');
-
   if (mobileMenuElem) {
     var menu = Object.create(sedona.MobileMenu);
     menu.init(mobileMenuElem);
   }
 
+  // Init google maps
+  var mapElem = document.querySelector('.js-google-map');
+  if (mapElem) {
+    var maps = Object.create(sedona.GoogleMaps);
+    maps.init(mapElem)
+    google.maps.event.addDomListener(window, 'load', maps.initMap.bind(maps));
+  }
+
   // Init day counter
   var dayCounterElems = document.querySelectorAll('.js-counter-days');
-
   if (dayCounterElems.length) {
     for (var i = 0; i < dayCounterElems.length; i++) {
       var dateCounter = Object.create(sedona.DateCounter);
@@ -23,9 +29,8 @@
 
   //Init people counter
   var peopleCounterElems = document.querySelectorAll('.js-counter-people');
-  var template = document.querySelector('#person-template').innerHTML;
-
   if (peopleCounterElems.length) {
+    var template = document.querySelector('#person-template').innerHTML;
     for (var i = 0; i < peopleCounterElems.length; i++) {
       var peopleCounter = Object.create(sedona.PeopleCounter);
       peopleCounter.setup({
@@ -35,9 +40,6 @@
       });
     }
   }
-
-  // Init Photo Selector
-
 
   // Init Send Form
   var form = document.querySelector('.form');
@@ -59,7 +61,4 @@
       photoSelector: photoSelector
     })
   }
-
-
-
 }(window.sedona || {}));
