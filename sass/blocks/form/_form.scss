@@ -478,11 +478,10 @@
 
   &__remove-btn {
     position: absolute;
-    top: -20%;
     left: 50%;
-    width: 40%;
-    height: 40%;
-    margin-left: -20%;
+    width: 4rem;
+    height: 4rem;
+    transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
     outline: none;
@@ -776,7 +775,9 @@
     &__remove-btn {
       left: auto;
       right: 0;
-      margin-right: -20%;
+      width: 6rem;
+      height: 6rem;
+      transform: translate(50%, -50%);
     }
 
     &__grid-item {
