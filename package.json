@@ -4,7 +4,11 @@
   "description": " Visit Sedona - tourist website",
   "main": "index.js",
   "scripts": {
-    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss"
+    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
+    "deploy": "npm run build && gh-pages -d dist",
+    "dev": "gulp devServer",
+    "start" : "npm run dev",
+    "build": "gulp buildDist"
   },
   "pre-commit": [
     "stylelint"
@@ -25,11 +29,24 @@
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "browser-sync": "2.18.13",
+    "css-mqpacker": "^6.0.2",
+    "del": "^3.0.0",
+    "gh-pages": "^1.1.0",
     "gulp": "3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^4.3.2",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "7.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "3.1.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^3.0.0",
     "pre-commit": "1.2.2",
+    "run-sequence": "^2.2.1",
     "stylelint": "9.1.1",
     "stylelint-config-recommended-scss": "3.1.0",
     "stylelint-config-standard": "18.1.0",
