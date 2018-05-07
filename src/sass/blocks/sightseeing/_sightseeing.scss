@@ -13,19 +13,17 @@
       padding: 5.7rem 6.25% 4.2rem;
     }
 
-    &--separator {
-      &::before {
-        content: "";
-        position: absolute;
-        top: -19px;
-        left: 0;
+    &--separator::before {
+      content: "";
+      position: absolute;
+      top: -1.9rem;
+      left: 0;
 
-        @include size(100%, 3.7rem);
-        background-image: url("../img/bg-triangle.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 3.7rem;
-      }
+      @include size(100%, 3.7rem);
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 3.7rem;
     }
   }
 
@@ -56,10 +54,8 @@
       padding-top: 4.5rem;
       padding-bottom: 4.9rem;
 
-      &--separator {
-        &::before {
-          content: none;
-        }
+      &--separator::before {
+        content: none;
       }
     }
 
@@ -71,12 +67,18 @@
       margin-bottom: 2.2rem;
     }
   }
+
   // Desktop screen
   @include screen-size($desktop-size) {
     &__inner {
-      width: 37.6rem;
+      box-sizing: border-box;
+      height: 25.6rem;
+      width: 40rem;
       padding-top: 5.2rem;
       padding-bottom: 8.4rem;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
     }
 
     &__header {
