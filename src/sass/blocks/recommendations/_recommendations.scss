@@ -35,7 +35,7 @@
       left: 0.1rem;
       background-image: url("../img/icon-house.svg");
       background-repeat: no-repeat;
-      background-size: 41px 37px;
+      background-size: 4.1rem 3.7rem;
     }
 
     &--gift::before {
@@ -43,7 +43,7 @@
       left: 0.5rem;
       background-image: url("../img/icon-gift.svg");
       background-repeat: no-repeat;
-      background-size: 34px 37px;
+      background-size: 3.4rem 3.7rem;
     }
 
     &--food::before {
@@ -51,7 +51,7 @@
       left: -0.1rem;
       background-image: url("../img/icon-burger.svg");
       background-repeat: no-repeat;
-      background-size: 39px 35px;
+      background-size: 3.9rem 3.5rem;
     }
   }
 
@@ -75,6 +75,9 @@
 
     &__item {
       width: 33.3%;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 33.3%;
       padding-top: 13.9rem;
       padding-bottom: 1.3rem;
 
@@ -86,12 +89,10 @@
         transform: translate(-50%);
       }
 
-      &--house {
-        &::before {
-          top: 4rem;
-          width: 7.7rem;
-          background-size: 7.6rem 7.2rem;
-        }
+      &--house::before {
+        top: 4rem;
+        width: 7.7rem;
+        background-size: 7.6rem 7.2rem;
       }
 
       &--gift {
@@ -104,12 +105,10 @@
         }
       }
 
-      &--food {
-        &::before {
-          top: 4.2rem;
-          width: 7.7rem;
-          background-size: 7.7rem 7rem;
-        }
+      &--food::before {
+        top: 4.2rem;
+        width: 7.7rem;
+        background-size: 7.7rem 7rem;
       }
     }
   }
