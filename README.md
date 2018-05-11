@@ -51,4 +51,4 @@ ____
 
 `$ npm deploy`
 
-Runs `$ npm build` above command and deploys built website to the GitHub pages.
+Runs `$ npm build` command and deploys built website to the GitHub pages.
