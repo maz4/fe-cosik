@@ -1,10 +1,29 @@
 # Sedona
 ____
 
-This project will use **HTML5** and **CSS** in the **BEM** methodology. In addition to make the elements of the website interactive will be used **JavaScript**.
+Frontend educational project based on the PSD file. Made with the perfect pixel approach.
 
-*Soon the ReadMe file will expand due to the project growth.*
+The project was build with the following technologies and methodologies:
+- semantic HTML5
+- CSS
+- Sass
+- BEM
+- JavaScript
+- Gulp
+- NPM
 
-## Layout description:
+## Table of contents
+1. [How to compile the project](#install)
+  1. [Install NPM](#npm)
+2. [Commands to compile the project](#compile)
 
-## Code description
+
+### How to compile the project <a name="install"></a>
+To compile the project you will need NPM and Gulp task runner
+
+#### Install NPM<a name="npm"></a>
+The project has a package.json file which stores all needed dependencies.
+
+`$ npm install`
+
+## Commands to compile the project <a name="compile"></a>
