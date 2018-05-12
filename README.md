@@ -1,5 +1,4 @@
 # Sedona
-____
 
 Frontend educational project based on the PSD file. Made with the perfect pixel approach.
 
