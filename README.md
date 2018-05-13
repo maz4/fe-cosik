@@ -1,10 +1,53 @@
 # Sedona
+
+Frontend educational project based on the PSD file. Made with the perfect pixel approach.
+
+The project was build with the following technologies and methodologies:
+- Semantic HTML5
+- CSS
+- Sass
+- BEM
+- JavaScript
+- Gulp
+- NPM
+- mobile first
+- responsive layout
+
+## Table of contents
+1. [How to compile the project](#install)
+  1. [Install NPM](#npm)
+  2. [Commands to compile the project](#compile)
+    - [Build development](#dev)
+    - [Build distribution](#dist)
+    - [Build distribution and deploy](#deploy)
+
+
+### How to compile the project <a name="install"></a>
+To compile the project you will need node.js and NPM
+
+#### Install NPM<a name="npm"></a>
+Installs dependencies.
+
+`$ npm install`
+
+### Commands to compile the project <a name="compile"></a>
+
+- Starts development with browser sync <a name="dev"></a>
+
+`$ npm start`
+
+Builds a temporary development folder (tmp) and launches bowser-sync script to watch the changes made in the html files, sass files, js files, and checks images folder.
+___
+
+- Build for production release <a name="dist"></a>
+
+`$ npm build`
+
+Builds distribution folder (dist) into which copies and minifies files which are ready to be send on the server.
 ____
 
-This project will use **HTML5** and **CSS** in the **BEM** methodology. In addition to make the elements of the website interactive will be used **JavaScript**.
+- Deploys to the gh-pages branch <a name="deploy"></a>
 
-*Soon the ReadMe file will expand due to the project growth.*
+`$ npm deploy`
 
-## Layout description:
-
-## Code description
+Runs `$ npm build` command and deploys built website to the GitHub pages.
