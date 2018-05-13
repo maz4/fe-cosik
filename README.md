@@ -23,27 +23,27 @@ The project was build with the following technologies and methodologies:
 
 
 ### How to compile the project <a name="install"></a>
-To compile the project you will need NPM and Gulp task runner
+To compile the project you will need node.js and NPM
 
 #### Install NPM<a name="npm"></a>
-The project has a package.json file which stores all needed dependencies.
+Installs dependencies.
 
 `$ npm install`
 
 ### Commands to compile the project <a name="compile"></a>
 
-- Build development <a name="dev"></a>
+- Starts development with browser sync <a name="dev"></a>
 
 `$ npm start`
 
-Builds a temporary development folder (tmp) and launches bowser-sync script to watch the changes mad in the html, sass and js files.
+Builds a temporary development folder (tmp) and launches bowser-sync script to watch the changes made in the html files, sass files, js files, and checks images folder.
 ___
 
-- Build distribution <a name="dist"></a>
+- Build for production release <a name="dist"></a>
 
 `$ npm build`
 
-Builds distribution folder (dist) into which copy and minifies files which are ready to be send on the server.
+Builds distribution folder (dist) into which copies and minifies files which are ready to be send on the server.
 ____
 
 - Build and deploy distribution <a name="deploy"></a>
