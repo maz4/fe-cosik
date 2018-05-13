@@ -46,7 +46,7 @@ ___
 Builds distribution folder (dist) into which copies and minifies files which are ready to be send on the server.
 ____
 
-- Build and deploy distribution <a name="deploy"></a>
+- Deploys to the gh-pages branch <a name="deploy"></a>
 
 `$ npm deploy`
 
