@@ -1,5 +1,9 @@
 # Sedona
 
+## Live website
+
+[Sedona - https://maz4.github.io/fe-cosik/](https://maz4.github.io/fe-cosik/)
+
 Frontend educational project based on the PSD file. Made with the perfect pixel approach.
 
 The project was build with the following technologies and methodologies:
