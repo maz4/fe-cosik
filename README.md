@@ -7,12 +7,11 @@ Frontend educational project based on the PSD file. Made with the perfect pixel 
 The project was build with the following technologies and methodologies:
 - Semantic HTML5
 - CSS
-- CSS modules
+- Sass
+- BEM	
 - JavaScript
-- React
-- Redux
+- Gulp
 - NPM
-- Webpack
 - mobile first
 - responsive layout
 
